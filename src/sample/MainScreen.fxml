@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Plik">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#add" text="Dodaj wpis" />
+                  <MenuItem mnemonicParsing="false" text="Wczytaj" />
+                  <MenuItem mnemonicParsing="false" text="Zapisz" />
+              <MenuItem mnemonicParsing="false" text="Usun" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="O nas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#nas" text="O nas" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="TableView" prefHeight="373.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="TitleColumn" prefWidth="86.0" text="Tytuł" />
+                      <TableColumn fx:id="LoginColumn" prefWidth="82.0" text="Login" />
+                        <TableColumn fx:id="PassColumn" minWidth="4.0" prefWidth="88.0" text="Hasło" />
+                        <TableColumn fx:id="Pass2Column" minWidth="4.0" prefWidth="116.0" text="Hasło (opcjonalne)" />
+                        <TableColumn fx:id="URLColumn" minWidth="6.0" prefWidth="86.0" text="URL" />
+                        <TableColumn fx:id="NoticeColumn" prefWidth="134.0" text="Notatka" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
