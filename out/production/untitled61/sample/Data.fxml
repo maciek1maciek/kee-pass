@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DataController">
+   <children>
+      <VBox>
+         <children>
+            <HBox prefWidth="372.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="372.0" text="Podaj dane">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefHeight="19.0" prefWidth="372.0" />
+            <HBox prefHeight="35.0" prefWidth="372.0" spacing="10.0">
+               <children>
+                  <Label text="Tytuł:">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="Title" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="35.0" prefWidth="372.0" spacing="10.0">
+         <children>
+            <Label text="Login">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="Login" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="63.0" prefHeight="35.0" prefWidth="372.0" spacing="10.0">
+         <children>
+            <Label text="Hasło">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="Pass" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="63.0" prefHeight="35.0" prefWidth="372.0" spacing="10.0">
+         <children>
+            <Label text="Adres URL">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="URL" prefHeight="25.0" prefWidth="226.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="103.0" prefHeight="35.0" prefWidth="372.0" spacing="10.0">
+         <children>
+            <Label text="Notatka:">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="Notice" prefHeight="25.0" prefWidth="226.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="22.0" prefWidth="372.0">
+         <children>
+            <Separator prefHeight="17.0" prefWidth="372.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="234.0" prefHeight="22.0" prefWidth="372.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Add" text="Dodaj" />
+            <Button mnemonicParsing="false" onAction="#Anuluj" text="Anuluj" />
+         </children>
+      </HBox>
+   </children>
+</FlowPane>

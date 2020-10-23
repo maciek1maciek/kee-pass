@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="300.0" prefWidth="290.0" vgap="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginScreenController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="43.0" prefWidth="195.0">
+         <children>
+            <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="179.0" text="Witaj w KeePass 1.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="194.0" prefWidth="233.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="172.0" text="Podaj hasło swojego Keepassa:" />
+            <PasswordField fx:id="passText" prefHeight="25.0" prefWidth="523.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Status:">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="7.0" />
+                     </padding></Label>
+                  <Label fx:id="stat" textFill="#e32210">
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+            <Button fx:id="login" mnemonicParsing="false" onAction="#Login" text="Zaloguj">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="150.0" right="10.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</FlowPane>

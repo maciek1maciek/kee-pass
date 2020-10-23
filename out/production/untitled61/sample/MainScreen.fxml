@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Plik">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#add" text="Dodaj wpis" />
+                  <MenuItem mnemonicParsing="false" text="Zapisz" />
+              <MenuItem mnemonicParsing="false" text="Usun" />
+                  <MenuItem mnemonicParsing="false" text="Wyjdź" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Narzędzia">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Wyjdź" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="O nas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="TableView" prefHeight="373.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="TitleColumn" prefWidth="128.0" text="Tytuł" />
+                      <TableColumn fx:id="LoginColumn" prefWidth="136.0" text="Login" />
+                        <TableColumn fx:id="PassColumn" minWidth="4.0" prefWidth="106.0" text="Hasło" />
+                        <TableColumn fx:id="URLColumn" minWidth="6.0" prefWidth="122.0" text="URL" />
+                        <TableColumn fx:id="NoticeColumn" prefWidth="107.0" text="Notatka" />
+                        <TableColumn fx:id="TitleColumn1" prefWidth="128.0" text="Tytuł" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
